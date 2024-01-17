@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-List</title>
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+    <div class="main">
+        <p class="main-title">ToDo-List</p>
+        <div class="left">
+            <div class="top-container">
+                <p class="subtitle">Projects</p>
+                <button class="show-project-form">+</button>
+            </div>
+            <ul class="project-list">
+            </ul>
+        </div>
+        <div class="right">
+            <ul class="tasks">
+            </ul>
+            <button class="show-task-form">+ New ToDo</button>
+        </div>
+    </div>
+    <div class="forms-container">
+        <div class="form-background add-project">
+            <form action="">
+                <p class="title">Project Name</p>
+                <input type="text" id="type" placeholder="Project"><br>
+                <button type="button" class="submit">Create</button>
+            </form>
+        </div>
+
+        <div class="form-background add-task">
+            <form action="">
+                <span>Finished?</span>
+                <input type="checkbox" id="is-finished"/>
+                <input type="text" placeholder="Project Title" id="title">
+                <input type="text" placeholder="Project Description" id="description">
+                <span>Priority:</span>
+                <select id="priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <input type="date" id="due-date">
+                <button type="button" class="submit">Create</button>
+            </form>
+        </div>
+    </div>    
+    <script src="main.js"></script>
+</body>
+</html>
